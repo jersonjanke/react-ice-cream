@@ -4,7 +4,10 @@ const cors = require('cors');
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
+
+app.use(cors({
+    origin: 'https://3000-amethyst-turkey-5zmqp59h.ws-us03.gitpod.io'
+}));
 
 const port = 5000;
 
