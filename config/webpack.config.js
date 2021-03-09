@@ -119,6 +119,12 @@ module.exports = function (webpackEnv) {
 
     return {
         mode: isEnvProduction ? 'production' : isEnvDevelopment && 'development',
+
+        devServer: {
+            host: '0.0.0.0',
+            disableHostCheck: true
+        },
+
         // Stop compilation early in production
         bail: isEnvProduction,
         devtool: isEnvProduction

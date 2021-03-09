@@ -1,4 +1,5 @@
 {
+    "proxy": "https://5000-tan-donkey-xrz52mpg.ws-us03.gitpod.io",
     "name": "ultimate-react-icecream",
     "version": "0.1.0",
     "private": true,
