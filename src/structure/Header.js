@@ -8,7 +8,7 @@ const Header = () => {
             <img src={iceCreamImg} alt='' />
             <h1>Ultimate Ice Cream</h1>
             <nav>
-                <NavLink to="/" activeClassName="active" axact >
+                <NavLink to="/" activeClassName="active" exact >
                     Menu
                 </NavLink>
             </nav>

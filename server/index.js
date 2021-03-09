@@ -140,7 +140,7 @@ app.post('/api/menu', (req, res) => {
     res.send(newMenuItem);
 });
 
-app.get('/api/menu/:id', (req, res) => {
+app.get('/api/menu/:id', cors(), (req, res) => {
     const menuItem = menuData.find(
         item => item.id === parseInt(req.params.id),
         10
@@ -153,7 +153,7 @@ app.get('/api/menu/:id', (req, res) => {
     }
 });
 
-app.put('/api/menu/:id', (req, res) => {
+app.put('/api/menu/:id', cors(), (req, res) => {
     const intId = parseInt(req.params.id, 10);
     const { iceCream, ...rest } = req.body;
 
@@ -174,7 +174,7 @@ app.put('/api/menu/:id', (req, res) => {
     res.send(updatedItem);
 });
 
-app.delete('/api/menu/:id', (req, res) => {
+app.delete('/api/menu/:id', cors(), (req, res) => {
     menuData = menuData.filter(
         menuItem => menuItem.id !== parseInt(req.params.id, 10)
     );

@@ -13,3 +13,10 @@ export const getMenu = () => {
         })
     })
 }
+
+export const getMenuItem = id => {
+    return axios.get(`/api/menu/${id}`).then(response => response.data)
+        .catch(err => {
+            throw err
+        })
+}
