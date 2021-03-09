@@ -5,10 +5,6 @@ const cors = require('cors');
 const app = express();
 app.use(bodyParser.json());
 
-app.use(cors({
-    origin: 'https://3000-amethyst-turkey-5zmqp59h.ws-us03.gitpod.io'
-}));
-
 const port = 5000;
 
 const iceCreams = [
@@ -110,11 +106,11 @@ const getAvailableStock = () =>
             undefined
     );
 
-app.get('/api/menu/stock-ice-creams', (req, res) => {
+app.get('/api/menu/stock-ice-creams', cors(), (req, res) => {
     res.send(getAvailableStock());
 });
 
-app.get('/api/menu/stock-ice-creams/:id', (req, res) => {
+app.get('/api/menu/stock-ice-creams/:id', cors(), (req, res) => {
     const iceCream = getAvailableStock().find(
         iceCream => iceCream.id === parseInt(req.params.id, 10)
     );
@@ -126,7 +122,7 @@ app.get('/api/menu/stock-ice-creams/:id', (req, res) => {
     }
 });
 
-app.get('/api/menu', (req, res) => {
+app.get('/api/menu', cors(), (req, res) => {
     res.send(menuData);
 });
 
