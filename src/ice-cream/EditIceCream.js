@@ -5,6 +5,7 @@ import { getMenuItem, putMenuItem } from '../data/iceCreamData'
 import PropTypes from 'prop-types'
 import IceCreamImage from './IceCreamImage'
 import '../styles/forms-spacer.scss'
+import useUniqueIds from '../hooks/useUniqueIds'
 
 const EditIceCream = ({ match, history }) => {
     const isMounted = useRef(true)
@@ -16,6 +17,7 @@ const EditIceCream = ({ match, history }) => {
         iceCream: {}
     })
     const [isLoading, setIsLoading] = useState(false)
+    const [descriptionId, stockId, quantityId, priceId] = useUniqueIds(4)
 
     useEffect(() => {
         return () => {
@@ -102,18 +104,20 @@ const EditIceCream = ({ match, history }) => {
                             <dd>{menuItem.iceCream.name}</dd>
                         </dl>
                         <form onSubmit={onSubmitHandler}>
-                            <label htmlFor="descripton">
+                            <label htmlFor={descriptionId}>
                                 Description:
                             </label>
                             <textarea
+                                id={descriptionId}
                                 name="descripton"
                                 rows="3"
                                 value={menuItem.description}
                                 onChange={onChangeHandler}>
                             </textarea>
-                            <label htmlFor="inStock">In Stock:</label>
+                            <label htmlFor={stockId}>In Stock:</label>
                             <div className="checkbox-wrapper">
                                 <input
+                                    id={stockId}
                                     type="checkbox"
                                     name="inStock"
                                     checked={menuItem.inStock}
@@ -121,8 +125,9 @@ const EditIceCream = ({ match, history }) => {
                                 />
                                 <div className="checkbox-wrapper-checked"></div>
                             </div>
-                            <label htmlFor="quantity">Quantity</label>
+                            <label htmlFor={quantityId}>Quantity</label>
                             <select
+                                id={quantityId}
                                 name="quantity"
                                 value={menuItem.quantity}
                                 onChange={onChangeHandler}
@@ -134,8 +139,9 @@ const EditIceCream = ({ match, history }) => {
                                 <option value="40">40</option>
                                 <option value="50">50</option>
                             </select>
-                            <label htmlFor="price">Price: </label>
+                            <label htmlFor={priceId}>Price: </label>
                             <input
+                                id={priceId}
                                 type="number"
                                 step="0.01"
                                 name="price"
