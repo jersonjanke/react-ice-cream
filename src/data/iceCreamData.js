@@ -14,6 +14,13 @@ export const getMenu = () => {
     });
 };
 
+export const getIceCreams = () => {
+    return axios.get('/api/menu/stock-ice-creams').then(response => {
+        return response.data
+    })
+}
+
+
 export const getMenuItem = id => {
     return axios
         .get(`/api/menu/${id}`)
