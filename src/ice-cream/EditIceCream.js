@@ -3,14 +3,15 @@ import LoaderMessage from '../structure/LoaderMessage';
 import { getMenuItem, putMenuItem } from '../data/iceCreamData';
 import PropTypes from 'prop-types';
 import IceCreamImage from './IceCreamImage';
-import '../styles/forms-spacer.scss';
 import useUniqueIds from '../hooks/useUniqueIds';
 import Main from '../structure/Main';
 import { validateDescription, validateQuantity, validatePrice } from '../utils/validator'
 import useValidation from '../hooks/useValidation'
+import ErrorContainer from './ErrorContainer'
 
 const EditIceCream = ({ match, history }) => {
     const isMounted = useRef(true);
+    const [hasSubmitted, setHasSubmitted] = useState(false)
     const [menuItem, setMenuItem] = useState({
         price: '0.00',
         inStock: true,
@@ -75,9 +76,7 @@ const EditIceCream = ({ match, history }) => {
     const onSubmitHandler = e => {
         e.preventDefault();
 
-        console.log(descriptionError)
-        console.log(quantityError)
-        console.log(priceError)
+        setHasSubmitted(true)
 
         if (!descriptionError && !quantityError && !priceError) {
             const { id, price, inStock, quantity, description, iceCream } = menuItem;
@@ -113,14 +112,18 @@ const EditIceCream = ({ match, history }) => {
                             <dd>{menuItem.iceCream.name}</dd>
                         </dl>
                         <form onSubmit={onSubmitHandler}>
-                            <label htmlFor={descriptionId}>Description:</label>
-                            <textarea
-                                id={descriptionId}
-                                name="descripton"
-                                rows="3"
-                                value={menuItem.description}
-                                onChange={onChangeHandler}
-                            ></textarea>
+                            <label htmlFor={descriptionId}
+                            >Description<span aria-hidden="true">*</span> :
+                            </label>
+                            <ErrorContainer errorText={descriptionError} hasSubmitted={hasSubmitted} >
+                                <textarea
+                                    id={descriptionId}
+                                    name="descripton"
+                                    rows="3"
+                                    value={menuItem.description}
+                                    onChange={onChangeHandler}
+                                ></textarea>
+                            </ErrorContainer>
                             <label htmlFor={stockId}>In Stock:</label>
                             <div className="checkbox-wrapper">
                                 <input
@@ -132,29 +135,36 @@ const EditIceCream = ({ match, history }) => {
                                 />
                                 <div className="checkbox-wrapper-checked"></div>
                             </div>
-                            <label htmlFor={quantityId}>Quantity</label>
-                            <select
-                                id={quantityId}
-                                name="quantity"
-                                value={menuItem.quantity}
-                                onChange={onChangeHandler}
-                            >
-                                <option value="0">0</option>
-                                <option value="10">10</option>
-                                <option value="20">20</option>
-                                <option value="30">30</option>
-                                <option value="40">40</option>
-                                <option value="50">50</option>
-                            </select>
-                            <label htmlFor={priceId}>Price: </label>
-                            <input
-                                id={priceId}
-                                type="number"
-                                step="0.01"
-                                name="price"
-                                value={menuItem.price}
-                                onChange={onChangeHandler}
-                            />
+                            <label htmlFor={quantityId}>Quantity
+                            <span aria-hidden="true">*</span></label>
+                            <ErrorContainer errorText={quantityError} hasSubmitted={hasSubmitted} >
+                                <select
+                                    id={quantityId}
+                                    name="quantity"
+                                    value={menuItem.quantity}
+                                    onChange={onChangeHandler}
+                                >
+                                    <option value="0">0</option>
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="40">40</option>
+                                    <option value="50">50</option>
+                                </select>
+                            </ErrorContainer>
+                            <label htmlFor={priceId}>Price
+                             <span aria-hidden="true">*</span>
+                            </label>
+                            <ErrorContainer errorText={priceError} hasSubmitted={hasSubmitted}>
+                                <input
+                                    id={priceId}
+                                    type="number"
+                                    step="0.01"
+                                    name="price"
+                                    value={menuItem.price}
+                                    onChange={onChangeHandler}
+                                />
+                            </ErrorContainer>
                             <div className="button-container">
                                 <button className="ok" type="submit">
                                     OK
