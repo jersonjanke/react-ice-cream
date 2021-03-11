@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import Helmet from 'react-helmet';
 import LoaderMessage from '../structure/LoaderMessage';
 import { getMenuItem, putMenuItem } from '../data/iceCreamData';
 import PropTypes from 'prop-types';
@@ -44,7 +43,7 @@ const EditIceCream = ({ match, history }) => {
       })
       .catch(err => {
         if (err.response.status === 404 && isMounted.current) {
-          history.replace('/');
+          history.replace('/', { focus: true });
         }
       });
   }, [match.params.menuItemId]);
@@ -80,13 +79,12 @@ const EditIceCream = ({ match, history }) => {
       description,
     };
     putMenuItem(submitItem).then(() => {
-      history.push('/');
+      history.push('/', { focus: true });
     });
   };
 
   return (
     <Main headingText="Update this beauty | Ultimete Ice Cream">
-      <h2>Update this beauty</h2>
       <LoaderMessage
         loadingMsg="Loading ice cream"
         doneMsg="Ice cream loaded."
