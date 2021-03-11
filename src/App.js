@@ -14,6 +14,9 @@ import EditIceCream from './ice-cream/EditIceCream';
 const App = () => {
   return (
     <Router>
+      <a href="#main" className="skip-link">
+        Skip to content
+      </a>
       <Header />
       <Switch>
         <Route path="/" component={Menu} exact />
