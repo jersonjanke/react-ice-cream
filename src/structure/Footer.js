@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
-    return (
-        <footer>
-            <span>&copy; Ultimate Ice Cream</span>
-        </footer>
-    )
-}
+  return (
+    <footer>
+      <span>&copy; Ultimate Ice Cream</span>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

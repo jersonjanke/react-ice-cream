@@ -1,15 +1,21 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const IceCreamImage = ({ iceCreamId }) => {
-    return (
-        iceCreamId != null &&
-        <img src={`${process.env.PUBLIC_URL}/ice-cream-images/ice-cream-${iceCreamId.toString()}.svg`} alt="" />
+  return (
+    iceCreamId != null && (
+      <img
+        src={`${
+          process.env.PUBLIC_URL
+        }/ice-cream-images/ice-cream-${iceCreamId.toString()}.svg`}
+        alt=""
+      />
     )
-}
+  );
+};
 
 IceCreamImage.prototype = {
-    iceCreamId: PropTypes.number,
-}
+  iceCreamId: PropTypes.number,
+};
 
-export default IceCreamImage
+export default IceCreamImage;
