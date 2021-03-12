@@ -1,17 +1,71 @@
 1 - How good is you English?
 
-Well, I understand almost everything, but I still have to improve my speaking. But I watch a lot videos in English everyday about Programing, music and other videos. I’m make conversation classes
-
+Well, I understand almost everything, but I still have to improve my speaking. 
+But I watch a lot videos in English everyday about Programing, music and other videos. I’m make conversation classes
 My level of English is not so high, but i keep studying and improving it day after day
 
 2 - Tell me little bit about you?
 
+I From SC, I'm 32 years olds, 
+I'm living 25 year in Timbó SC, Is a small city beside Blumenau
+in 2018 (twenty eighteen) I went to SP for to work in IBM
+I have a girlfriend, she live with me, she learng Programing in butcamp for girls, name's is Laboratoria
+
+We dated 10 years
+
 3 - what’s your background?
+
+I have technical course in Programing in finish in 2012 (twent twelve), 
+course have 2 years of durations, focus in programin, and now I making software engineer in UNICESSUMAR, 
+I'm half of the course, more 2 year for finish. classes are online.
+
+For Sistemas (2013) (twelve thirteen)
+For Sistema in Timbó, my city, the small company. 
+4 peaples, put a I larned a lot, ERP softwares in general and small project with ardunio, 
+the eletronic bord, I worked with is, for exemple the integrated house, the lights and others things
+
+Senior Sistemas (2015) (twelve fifteen)
+I start in Senior Sistemas, Is a software house in human Resources, In this company I sterted full frontend,
+with AngularJs the first version, in beta. I was a Junior developer, I worked the awesome peoples and 
+I larn a lot, very god, I have the good memorys
+
+* IBM (2018)(twelve eighteen)
+
+I came from SP for work at IBM, awesome experince, new city, new jobs, othes peoplos, I get the
+subaway the first time in my live. Its so cool for me. At IBM I from alocated in Big bank for work 
+frontend developer stay in that project 7 months
+
+* GFT (2018)(twelve eighteen)
+
+Start GFT IT consulting and allocated in other big bank project open account from Paraguay, small project,
+with new version Angular 8, lasted 4 months.
+
+* Safra(2018)(twelve eighteen)
+
+Big bank, I'm worked in big project a lot peoples use the application, I'm worked in this project like a 
+fullstack, in the fronend angular and backend node.
+
+Banco Original(twelve twelve)
+
+It's my current job. I work in this new project, I'm work like a fullstack, project it's clound with AWS.
+Backend it's node and Frondend it's angular 10. 
+
+**** I don't talk more abount this project. ****
+
 
 4 - what do you like to do in your free time?
 
+In my free time a like play guitar, play games in xbox or switch, watch movies and series.
+
 5 - Are you satisfied with your career?
+
+I would like to change a little bit, change angular for react, I am studying very hard reactJs
+and I'm create a new project for larning reactjs, its a game of the music, have 2 notes, and play one sound,
+and select the correct note. (https://guitarnotes.com.br/)
 
 6 - Do you consider yourself successful?
 
 Yes, because I’ve already achieved my main goals, and i’m sure that in this company, I willl continue in this path…
+
+
+ - I was to prepare for interview
