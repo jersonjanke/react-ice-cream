@@ -19,33 +19,33 @@ I have technical course in Programing in finish in 2012 (twent twelve),
 course have 2 years of durations, focus in programin, and now I styding software engineer in UNICESSUMAR, 
 I'm half of the course, more 2 year for finish. classes are online.
 
-For Sistemas (2013) (twelve thirteen)
+For Sistemas (2013) (twelve thirteen)(2 years and 3 months)
 For Sistema in Timbó, my city, the small company. 
 4 peaples, put a I larned a lot, ERP softwares in general and small project with ardunio, 
 the eletronic bord, I worked with is, for exemple the integrated house, the lights and others things
 
-Senior Sistemas (2015) (twelve fifteen)
+Senior Sistemas (2015) (twelve fifteen)(3 years)
 I start in Senior Sistemas, Is a software house in human Resources, In this company I sterted full frontend,
 with AngularJs the first version, in beta. I was a Junior developer, I worked the awesome peoples and 
 I larn a lot, very god, I have the good memorys
 
-* IBM (2018)(twelve eighteen)
+* IBM (2018)(twelve eighteen)(7 months)
 
 I came from SP for work at IBM, awesome experince, new city, new jobs, othes peoplos, I get the
 subaway the first time in my live. Its so cool for me. At IBM I from alocated in Big bank for work 
 frontend developer stay in that project 7 months
 
-* GFT (2018)(twelve eighteen)
+* GFT (2018)(twelve eighteen)(4 months)
 
 Start GFT IT consulting and allocated in other big bank project open account from Paraguay, small project,
 with new version Angular 8, lasted 4 months.
 
-* Safra(2018)(twelve eighteen)
+* Safra(2018)(twelve eighteen)(1 year and 5 months)
 
 Big bank, I'm worked in big project a lot peoples use the application, I'm worked in this project like a 
 fullstack, in the fronend angular and backend node.
 
-Banco Original(twelve twelve)
+Banco Original(twelve twelve)(1 year)
 
 It's my current job. I work in this new project, I'm work like a fullstack, project it's clound with AWS.
 Backend it's node and Frondend it's angular 10. 
