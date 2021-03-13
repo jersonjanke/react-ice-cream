@@ -2,6 +2,7 @@ import React from 'react';
 import FocusLink from '../structure/FocusLink';
 import IceCreamImage from './IceCreamImage';
 import PropTypes from 'prop-types';
+import { css } from '@emotion/react';
 
 const IceCreamCard = ({ iceCreamId, heading, to, history, children }) => {
   const onItemClickHandler = () => {

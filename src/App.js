@@ -118,23 +118,6 @@ const globalStyle = css`
   }
 
   header {
-    position: relative;
-    text-align: center;
-    padding-top: 3em;
-
-    h1 {
-      display: flex;
-      justify-content: center;
-      color: #313030;
-      font-weight: bold;
-      font-family: 'cornerstone', sans-serif;
-      font-size: 2.5em;
-
-      img {
-        margin-right: 0.5em;
-      }
-    }
-
     nav {
       max-width: 63.75em;
       margin-left: auto;
